@@ -69,7 +69,10 @@ fun LogScreen(store: Store) {
                         Text(
                             "${entry.status()} · ${format.format(Date(entry.time))}",
                             style = MaterialTheme.typography.bodySmall,
-                            color = if (entry.action == null) MaterialTheme.colorScheme.onSurfaceVariant
+                            // Red means the call was stopped. ALLOW rang through like no
+                            // match at all, so it reads as ordinary, not as an error.
+                            color = if (entry.action == null || entry.action == RuleAction.ALLOW)
+                                MaterialTheme.colorScheme.onSurfaceVariant
                             else MaterialTheme.colorScheme.error,
                         )
                         if (entry.reason.isNotBlank()) {

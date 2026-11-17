@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Play Store feature graphic, 1024x500. Flat brand background with the launcher
+     mark on the left. Text stays inside an 80px margin because Play crops this
+     image differently depending on the surface it appears in. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16293F"/>
+      <stop offset="1" stop-color="#24456F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="500" fill="url(#bg)"/>
+
+  <!-- Shield mark: the 108-unit launcher artwork scaled 2.6x and placed left. -->
+  <g transform="translate(74, 135) scale(2.6)">
+    <path fill="#FFFFFF" d="M54,30 L74,37 L74,53 C74,66 65,75 54,79 C43,75 34,66 34,53 L34,37 Z"
+          transform="translate(-34,-30)"/>
+    <path fill="none" stroke="#1F3A5F" stroke-width="5" stroke-linecap="round" d="M44,44 L64,64"
+          transform="translate(-34,-30)"/>
+  </g>
+
+  <text x="250" y="257" font-family="Noto Sans" font-size="108" font-weight="bold" fill="#FFFFFF">Hush</text>
+  <text x="252" y="321" font-family="Noto Sans" font-size="34" fill="#C7D4E6">Block spam calls by pattern.</text>
+  <text x="252" y="369" font-family="Noto Sans" font-size="34" fill="#C7D4E6">Offline. No ads, no tracking.</text>
+</svg>
