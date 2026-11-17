@@ -15,8 +15,8 @@ android {
         // CallScreeningService with the call-screening role needs Android 10 (API 29).
         minSdk = 29
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.0.1"
     }
 
     // Credentials live in ~/.gradle/gradle.properties, never in the repo. Absent (CI, F-Droid)
